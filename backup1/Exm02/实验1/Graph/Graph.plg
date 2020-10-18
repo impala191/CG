@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Graph - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\134190~1\AppData\Local\Temp\RSP69BF.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Graph.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\College\HomeworkDates\computer graphics\backup\Exm02\สตั้1\Graph\GraphView.cpp"
+]
+Creating command line "cl.exe @C:\Users\134190~1\AppData\Local\Temp\RSP69BF.tmp" 
+Creating temporary file "C:\Users\134190~1\AppData\Local\Temp\RSP69C0.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Graph.pdb" /debug /machine:I386 /out:"Debug/Graph.exe" /pdbtype:sept 
+".\Debug\DIgColor.obj"
+".\Debug\Graph.obj"
+".\Debug\GraphDoc.obj"
+".\Debug\GraphView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Graph.res"
+]
+Creating command line "link.exe @C:\Users\134190~1\AppData\Local\Temp\RSP69C0.tmp"
+<h3>Output Window</h3>
+Compiling...
+GraphView.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Graph.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,7 @@
+C:\Users\Lenovo\AppData\Local\Temporary Projects\CSDraw\bin\Debug\CSDraw.exe
+C:\Users\Lenovo\AppData\Local\Temporary Projects\CSDraw\bin\Debug\CSDraw.pdb
+C:\Users\Lenovo\AppData\Local\Temporary Projects\CSDraw\obj\x86\Debug\CSDraw.Form1.resources
+C:\Users\Lenovo\AppData\Local\Temporary Projects\CSDraw\obj\x86\Debug\CSDraw.Properties.Resources.resources
+C:\Users\Lenovo\AppData\Local\Temporary Projects\CSDraw\obj\x86\Debug\CSDraw.csproj.GenerateResource.Cache
+C:\Users\Lenovo\AppData\Local\Temporary Projects\CSDraw\obj\x86\Debug\CSDraw.exe
+C:\Users\Lenovo\AppData\Local\Temporary Projects\CSDraw\obj\x86\Debug\CSDraw.pdb
