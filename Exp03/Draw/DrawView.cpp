@@ -205,7 +205,7 @@ void CDrawView::MIDLine(CDC *pDC, int x1, int y1, int x2, int y2, COLORREF color
 		}
 		else 
 		{
-			for(int i=y2;i<=y1;i++)
+		  	for(int i=y2;i<=y1;i++)
 				pDC->SetPixel(x1,i,color);
 		}
 		return;
@@ -225,7 +225,7 @@ void CDrawView::MIDLine(CDC *pDC, int x1, int y1, int x2, int y2, COLORREF color
     if(m) 
 	//m=1,即deltaY<deltaX,斜率小于1以x为自增量（始终步长+1）
 	{
-		if(y1<y2)//从下往上画，斜率大于0
+		if(y1<y2)//从下往上画，斜率大于0，小于1
 		{
 			d=2*a-b;
 			delta1=2*a;
@@ -236,12 +236,12 @@ void CDrawView::MIDLine(CDC *pDC, int x1, int y1, int x2, int y2, COLORREF color
 				{
 					x++;
 					y++;
-					d+=delta1;
+					d+=delta2;
 				}
 				else
 				{
 					x++;
-					d+=delta2;
+					d+=delta1;
 				}
 				pDC->SetPixel(x,y,color);
 			}
@@ -250,7 +250,7 @@ void CDrawView::MIDLine(CDC *pDC, int x1, int y1, int x2, int y2, COLORREF color
 		{
 			d=2*a-b;
 			delta1=2*a;
-			delta2=2*a*(a-b);
+			delta2=2*(a-b);
 			while(x<x2)
 			{
 				if(d<0)
@@ -260,8 +260,8 @@ void CDrawView::MIDLine(CDC *pDC, int x1, int y1, int x2, int y2, COLORREF color
 				}
 				else
 				{
-					x++;
 					y--;
+					x++;
 					d+=delta2;
 				}
 				pDC->SetPixel(x,y,color);
@@ -299,9 +299,9 @@ void CDrawView::MIDLine(CDC *pDC, int x1, int y1, int x2, int y2, COLORREF color
 			while(y>y2)
 			{
 				if(d<0)
-				{
-					y--;
+				{	
 					x++;
+					y--;
 					d+=delta2;
 				}
 				else
@@ -309,8 +309,9 @@ void CDrawView::MIDLine(CDC *pDC, int x1, int y1, int x2, int y2, COLORREF color
 					y--;
 					d+=delta1;
 				}
+			
+				pDC->SetPixel(x,y,color);
 			}
-			pDC->SetPixel(x,y,color);
 		}
 	}
 
